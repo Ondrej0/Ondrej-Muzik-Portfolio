@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondrej Muzik Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header---------------------------------------------------------------- -->
+    <header id="header">
+        <div>
+            <a href="#home" onclick="scrollToSection(event, 'home')">
+                <button>home</button>
+            </a>
+        </div>
+        <div>
+            <a href="#techstack" onclick="scrollToSection(event, 'techstack')">
+                <button>skills</button>
+            </a>
+        </div>
+        <div>
+            <a href="#about" onclick="scrollToSection(event, 'about')">
+                <button>about</button>
+            </a>
+        </div>
+        
+        <div>
+            <a href="#work" onclick="scrollToSection2(event, 'work')">
+                <button>work</button>
+            </a>    
+        </div>
+        <div>
+            <a href="#contact" onclick="scrollToSection(event, 'contact')">
+                <button>contact</button>
+            </a> 
+        </div>
+    </header>
+    <!-- Hero page-------------------------------------------------------------- -->    
+    <section id="home" class="hidden">
+        <div id="homeText">
+            <p id="homeText1">Hey, I'm Ondrej ✋🏼</p>
+            <p id="homeText2"><span id="soft">Soft</span>ware Developer</p>
+            <p id="homeText3">I'm an aspiring Software developer based in Bristol, have a look at some of my latest work.</p>
+        </div>
+        <div id="imgHomeContainer">
+            <img src="images/profilepic.png" alt="Profile Pic" id="profilePic">
+        </div>
+    </section>   
+    <!-- Tech Stack-------------------------------------------------------------- -->      
+    <section id="techstack" class="hidden">
+        <div>
+            <img src="images/TechStackSymbols.png" alt="Tech Stack" id="techstackImage">
+        </div>
+    </section>    
+    <!-- About me-------------------------------------------------------------- -->      
+    
+    <section id="about" class="hidden">
+        
+        <h3>About me</h3>
+        <p>I am currently a second-year student at the University of the West of England (UWE), pursuing a BSc in Business Computing. My passion for technology, particularly software development, started as a hobby while learning game development in my spare time, but quickly evolved into a love for creating projects and solving complex problems.<br><br>
+
+            I have a solid understanding of web technologies, including HTML, CSS, and JavaScript, with proficiency in algorithms and data structures. In addition, I have a strong grasp of UX/UI design principles, and I am skilled in Figma for designing user interfaces.<br><br>
+            
+            One of my professional highlights includes developing and launching a fully functional WordPress website with a user database for a UWE client using Hostinger. This experience allowed me to apply my knowledge of PHP and relational databases in a real-world setting, complementing the skills I've gained through university projects. </p>
+      
+    </section>  
+    
+    <!-- Selected Work-------------------------------------------------------------- -->     
+    <section id="work" class="hidden">
+        <div>
+            <p class="hidden"><span class="workTitle">Selected Work</span></p>
+        </div>
+         <!-- Uwe Breas------ -->  
+        <div class="workContainer" class="hidden">
+            <div class="workImgContainer">
+                <img src="images/UweBreasPic.png" alt="Uwe Breas Pic" class="workPic">
+            </div>
+            <div class="workTextConatiner">
+                <p class="workTitle">UWE BREAS Website </p>
+                <p>Me and another student were given full control over designing, developing and launching a website for UWE BREAS.
+                    This project was a great opportunity to familiarise my self with WordPress, Hostinger, design and databases. In addition the experience was great for learning how to understand the requirements client has set as well as how to efficiently split work with my colleague.
+                </p>
+                <a href="https://uwebreas.com/"target="_blank"><button>Live Site</button></a>
+            </div>
+        </div>
+        <!-- Page Pal------ -->  
+        <div class="workContainer" class="hidden">
+            <div class="workImgContainer">
+                <img src="images/PagePalPic.png" alt="PagePalPic" class="workPic">
+            </div>
+            <div class="workTextConatiner">
+                <p  class="workTitle">PagePal</p>
+                <p>PagePal allows user to make a reading list. This is done by either manually adding each book or adding a Excel spread sheet, which gets converted into JSON file, then uploaded using 
+                a external library. The books have a cover picture, this is done using a API which uses the name of the book to fetch cover. Search bar is also included in this as well as the ability to mark books as read and delete them. This project was great for improving my OOP skills in JavaScript.</p>
+                <div class="btnCon">
+                    <a href="https://youtu.be/yFfmfAf8XSE" target="_blank"><button class="demoBtn">Demo</button></a><a href="https://github.com/Ondrej0/Page-Pal" target="_blank"><button class="gitBtn">GitHub</button></a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Pixelz------ -->  
+        <div class="workContainer" class="hidden">
+            <div class="workImgContainer">
+                <img src="images/PixelzPic.png" alt="PixelzPic" class="workPic">
+            </div>
+            <div class="workTextConatiner">
+                <p  class="workTitle">Pixelz</p>
+                <p>Pixelz is a web app that allows the user to select size of a grid, pick any colour they want, draw a pixel art image and then export that image as a PNG file.
+                    The aim of this project was to practise my DOM manipulation and expand on my JavaScript coding skills. If I were to mak any improvements I would try to code a fill in area function too. </p>
+                <div class="btnCon">
+                    <a href="https://ondrej0.github.io/Pixelz/" target="_blank"><button class="demoBtn">Demo</button></a><a href="https://github.com/Ondrej0/Pixelz" target="_blank"><button class="gitBtn">GitHub</button></a>
+                </div>
+            </div>
+        </div>
+         <!-- VelocityFitness------ -->  
+         <div class="workContainer" class="hidden">
+            <div class="workImgContainer">
+                <img src="images/VelocityPic.png" alt="VelocityFitness" class="workPic">
+            </div>
+            <div class="workTextConatiner">
+                <p  class="workTitle">VelocityFitness</p>
+                <p>Velocity Fitness is a mock website for a gym, I only designed the home page because the main focus was just to practise my ability to make the website look good and be responsive. Some highlights are the header bar which hides on small devices as well as the use of “clamp” and flexbox for responsive design.
+                    If i were to do it again I would focus more on design and over all look of the website as it can look a bit crowded right now. </p>
+                <div class="btnCon">
+                    <a href="https://ondrej0.github.io/VelocityFitness/" target="_blank"><button class="demoBtn">Demo</button></a><a href="https://github.com/Ondrej0/VelocityFitness" target="_blank"><button class="gitBtn">GitHub</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- WeatherApp------ -->  
+        <div class="workContainer" class="hidden">
+            <div class="workImgContainer">
+                <img src="images/WeatherPic.png" alt="WeatherApp" class="workPic">
+            </div>
+            <div class="workTextConatiner">
+                <p class="workTitle">Weather App</p>
+                <p>This app allows the user to search any country or city adn it will provide weather information to the user. This app was my first experience with an API and was very beneficial for my JavaScript skills. If i were to improve anything it would be the over all design and look of the app, as well as adding extra funtionalities. </p>
+            <div class="btnCon">
+                <a href="https://ondrej0.github.io/Weather-App-3.0/" target="_blank"><button class="demoBtn">Demo</button></a><a href="https://github.com/Ondrej0/Weather-App-3.0" target="_blank"><button class="gitBtn">GitHub</button></a>
+            </div>
+            </div>
+        </div>
+    </section>  
+    <!-- Contact------ --> 
+    <section id="contact" class="hidden">
+        <p>Get In Touch</p>
+        <p>Phone - 07539 107480</p>
+        <p>Email - omuzik27@gmail.com</p>
+    </section> 
+      
+      
+       
+
+</body>
+</html>
